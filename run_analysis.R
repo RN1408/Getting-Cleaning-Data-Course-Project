@@ -83,4 +83,4 @@ xAns$activity <- NULL
 ## reorder the columns to get the subjectId and actLabel in front
 ## write out the tidy dataset
 xAns2 <- xAns[,c(87,88,1:86)]
-write.csv(xAns2, "TidyDataset.csv")
+write.table(xAns2,"TidyDataset.txt", row.names = FALSE)
